@@ -170,11 +170,7 @@ minetest.register_node("protect_block_area:protect", override({
 	description = S("Protection Block") .. "\n" .. S("Create areas quickly"),
 	short_description = S("Protection Block"),
 	-- drawtype = "nodebox",
-	tiles = {
-		"default_stone.png^protector_overlay.png",
-		"default_stone.png^protector_overlay.png",
-		"default_stone.png^protector_overlay.png^protector_logo.png"
-	},
+	tiles = { "protector_logo.png" },
 	sounds = default.node_sound_stone_defaults(),
 	groups = { dig_immediate = 2, unbreakable = 1 },
 	is_ground_content = false,
